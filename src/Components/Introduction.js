@@ -5,12 +5,13 @@ import FaArrow from 'react-icons/lib/fa/arrow-down';
 
 // https://stocksnap.io/photo/BKWZJHXR57
 // https://stocksnap.io/photo/A28WZDTYEY
-const Introduction = ({text}) =>{
+const Introduction = ({data}) =>{
+    const {presentation} = data;
     return(
     <section className={"bg-primary"} style={styles.bg} >
-        <div style={styles.caption} className="text-center">{text}</div>
+        <div style={styles.caption} className="text-center">{presentation}</div>
 
-        <span style={{paddingTop:1000, paddingLeft:'45%'}}>
+        <span style={{paddingLeft:'45%'}}>
             <a href={"#about"} style={{color:'inherit'}}>
                 <FaArrow size={'10%'} style={{marginTop:'2.5%', cursor:'pointer' }}/>
             </a>
@@ -34,7 +35,6 @@ const styles = {
     caption:{
         paddingTop:'15%',
         paddingBottom:'10%',
-        fontFamily: 'Open Sans',
         fontSize: '2.5em',
         color:'white',
         textShadow:'1px 1px 2px black',

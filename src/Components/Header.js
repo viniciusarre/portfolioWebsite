@@ -4,11 +4,11 @@ import logo from '../img/logo.png';
 
 const Header = () => {
 return(
-    <Nav style={styles.header} bsStyle="pills" >
+    <Nav style={styles.header}   >
         <NavbarBrand>
-            <a href={"#"} ><img src={logo}/></a>
+            <a><img src={logo}  alt={"webSite logo, consisting of two HTML tags with the developer's initials"}/></a>
         </NavbarBrand>
-        <NavItem href="mailto:viniciusarre@gmail.com"  btnInfo className={"pull-right"} style={{padding:10}}>
+        <NavItem href="mailto:viniciusarre@gmail.com"  className={"pull-right"}  style={{padding:10 }}>
                 Get in touch
         </NavItem>
         {/*</div>*/}

@@ -1,4 +1,46 @@
 body {
     width:100%;
     height:100%;
+
 }
+*{
+    font-family: Open Sans;
+}
+
+.footer{
+    background:#4268f4;
+    height:4pc;
+
+}
+
+.footer-text{
+    color:white;
+    font-size:1.5pc;
+    padding-top:1pc;
+}
+
+.logo{
+    height:10%;
+    width:auto;
+    margin:auto;
+}
+
+.logos{
+    height:30px;
+    width:30px;
+    margin:1%;
+}
+
+section{
+    margin-bottom:5%;
+
+}
+
+.block{
+    margin-top: 1%;
+}
+
+h2{
+    margin-bottom:3%;
+}
+
