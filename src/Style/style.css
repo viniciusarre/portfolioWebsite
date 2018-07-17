@@ -33,14 +33,26 @@ body {
 
 section{
     margin-bottom:5%;
-
 }
 
 .block{
     margin-top: 1%;
 }
 
-h2{
+#education, #projects, #languages h2{
     margin-bottom:3%;
 }
 
+.edu{
+    box-shadow: 5px 5px gray;
+}
+#projects{
+    color:white;
+    background-color:#696D8E;
+}
+#pt img{
+    padding:10%;
+}
+#es img{
+    padding:5%;
+}

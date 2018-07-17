@@ -14,7 +14,7 @@ export default class Education extends Component {
     render() {
         const {title,fatec, freecodecamp, duoc, udemy} = this.props.info;
         return (
-            <section id="#education">
+            <section id={"education"}>
                 <Grid>
                     <Row>
                         <Col xs={12} md={12}>
@@ -26,7 +26,7 @@ export default class Education extends Component {
                                 <Col xs={12} md={3}>
                                     <a href={"http://www.fatecjales.edu.br"}
                                        onMouseOver={()=>this.setState({display:true, header: fatec.title, message:fatec.desc})}>
-                                        <Image  src={logofatec} responsive/>
+                                        <Image  src={logofatec} responsive thumbnail className={"edu"}/>
                                     </a>
 
                                     <blockquote className={"visible-xs block"}><h1>{fatec.title}</h1>{fatec.desc}</blockquote>
@@ -34,7 +34,7 @@ export default class Education extends Component {
                                 <Col xs={12} md={3}>
                                     <a href={"https://www.udemy.com/"}
                                        onMouseOver={()=>this.setState({display:true, header: udemy.title, message:udemy.desc})}>
-                                        <Image src={logoudemy} responsive />
+                                        <Image src={logoudemy} responsive thumbnail className={"edu"}/>
                                     </a>
                                     <blockquote className={"visible-xs block"}><h1>{udemy.title}</h1>{udemy.desc}</blockquote>
                                 </Col>
@@ -43,14 +43,14 @@ export default class Education extends Component {
                                         <a href={"https://www.freecodecamp.org/"}
                                            onMouseOver={()=>this.setState({display:true, header: freecodecamp.title,
                                                message:freecodecamp.desc})}>
-                                            <Image src={logofreecodecamp} responsive />
+                                            <Image src={logofreecodecamp} responsive thumbnail style={{padding:'2.5%' }} className={"edu"}/>
                                         </a>
                                         <blockquote className={"visible-xs block"}><h1>{freecodecamp.title}</h1>{freecodecamp.desc}</blockquote>
                                     </Col>
                                     <Col xs={12} md={3}>
                                         <a href={"http://www.duoc.cl/"}
                                            onMouseOver={()=>this.setState({display:true, header: duoc.title, message:duoc.desc})}>
-                                            <Image src={logoduoc} responsive />
+                                            <Image src={logoduoc} responsive thumbnail style={{padding:'5%'}} className={"edu"}/>
                                         </a>
                                         <blockquote className={"visible-xs block"}><h1>{duoc.title}</h1>{duoc.desc}</blockquote>
                                     </Col>

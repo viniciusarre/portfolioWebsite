@@ -9,12 +9,12 @@ const Stack = ({content, stack2}) =>{
     const {header, data } = stack2;
     return(
 
-        <section id="stack1" style={{backgroundColor:'lightblue'}}>
+        <section id="stack" style={{backgroundColor:'lightblue'}}>
             <Grid>
                 <Row>
                     <Col xs={12} md={6}>
-                        <h2 className={"text-center"}>{title}</h2>
-                        <ListGroup style={{boxShadow: '5px 5px gray'}} >
+                        <h1 className={"text-center"}>{title}</h1>
+                        <ListGroup style={{boxShadow: '5px 5px gray'}}>
                             <ListGroupItem header="Frontend">{frontend} </ListGroupItem>
                             <ListGroupItem header="Backend">{backend} </ListGroupItem>
                             <ListGroupItem  header="RDBMS Databases">{rdbms} </ListGroupItem>
@@ -24,7 +24,7 @@ const Stack = ({content, stack2}) =>{
                     </Col>
                     <Col xs={12} md={6}>
                         <h2 className={"text-center"}>{header}</h2>
-                        <ListGroup >
+                        <ListGroup>
                             <MapListGroupItem data={data}/>
                         </ListGroup>
                     </Col>
