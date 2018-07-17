@@ -5,7 +5,7 @@ import {Panel, Col} from 'react-bootstrap';
 
 const MapLanguages = ({data})=>{
   return data.map((elem)=>
-      <Col xs={6} md={4}>
+      <Col xs={12} md={4}>
           <Panel id={elem.language}>
               <Panel.Heading>
                   <Panel.Title toggle>

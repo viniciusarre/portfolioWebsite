@@ -39,7 +39,10 @@ section{
     margin-top: 1%;
 }
 
-#education, #projects, #languages h2{
+#projects h2, #stack h2{
+    padding-top: 2%;
+}
+#education h2, #projects h2, #languages h2{
     margin-bottom:3%;
 }
 
@@ -49,10 +52,4 @@ section{
 #projects{
     color:white;
     background-color:#696D8E;
-}
-#pt img{
-    padding:10%;
-}
-#es img{
-    padding:5%;
 }

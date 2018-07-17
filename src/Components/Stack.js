@@ -13,7 +13,7 @@ const Stack = ({content, stack2}) =>{
             <Grid>
                 <Row>
                     <Col xs={12} md={6}>
-                        <h1 className={"text-center"}>{title}</h1>
+                        <h2 className={"text-center"}>{title}</h2>
                         <ListGroup style={{boxShadow: '5px 5px gray'}}>
                             <ListGroupItem header="Frontend">{frontend} </ListGroupItem>
                             <ListGroupItem header="Backend">{backend} </ListGroupItem>
